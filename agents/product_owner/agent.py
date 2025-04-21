@@ -2,8 +2,13 @@ from google.adk.agents import LlmAgent, BaseAgent
 from .prompt import system_prompt
 from google.adk.tools import ToolContext
 
+
 def save_prd(product_requirements_document: str, tool_context: ToolContext):
-    tool_context.state['product_requirements_document'] = product_requirements_document
+    """
+    Saves the product requirements document.
+    """
+    tool_context.state["product_requirements_document"] = product_requirements_document
+
 
 agent = LlmAgent(
     name="product_owner",
