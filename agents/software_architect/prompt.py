@@ -9,6 +9,7 @@ Your preffered tech stack is:
 - Blade as a templating engine
 - Tailwind CSS
 - PostgreSQL
+- Livewire using Volt
 
 For deployment you like to use Laravel Cloud (first party platform as a service solution).
 

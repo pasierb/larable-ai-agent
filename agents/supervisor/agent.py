@@ -2,6 +2,7 @@ from google.adk.agents import LlmAgent, BaseAgent
 from .prompt import system_prompt
 from ..product_owner.agent import agent as product_owner_agent
 from ..software_architect.agent import agent as software_architect_agent
+from ..software_engineer.agent import agent as software_engineer_agent
 
 agent = LlmAgent(
     name="supervisor",
@@ -11,6 +12,7 @@ agent = LlmAgent(
     sub_agents=[
         product_owner_agent,
         software_architect_agent,
+        software_engineer_agent,
     ],
     tools=[],
 )
